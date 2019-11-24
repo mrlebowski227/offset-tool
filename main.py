@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 
+"""
+Created on Thursday Nov 21 18:56:11 2019
+
+@author: Bas Brussen
+@email: b.brussen@digital-twin.nl
+"""
+
 import cv2 as cv
 import numpy as np
 from matplotlib import pyplot as plt
@@ -163,7 +170,7 @@ class OffsetTool(object):
     def plot_normal(self):
         #hx, hy, _ = plt.hist(self.x_result, bins=5)
         plt.figure(figsize=(12, 8))
-        print(self.y_result)
+
         self.x_result = self.x_result / self.scale_factor
         self.y_result = self.x_result / self.scale_factor
         
